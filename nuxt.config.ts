@@ -89,5 +89,8 @@ export default defineNuxtConfig({
 			siteName: 'Nuxt3 Shop',
 			currency: 'THB'
 		}
+	},
+	routeRules: {
+		'/images/**': { headers: { 'cache-control': 'public, max-age=31536000, immutable' } }
 	}
 })

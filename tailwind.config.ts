@@ -2,9 +2,6 @@
 
 import defaultTheme from 'tailwindcss/defaultTheme'
 import lodash from 'lodash'
-import tokens from './assets/tokens/mapping'
-const colorsArray = Object.values(tokens.color).map(({ name, value }) => [lodash.kebabCase(name), value])
-const colors = Object.fromEntries(colorsArray)
 
 module.exports = {
 	content: [
@@ -17,12 +14,6 @@ module.exports = {
 	],
 	theme: {
 		extend: {
-			colors: {
-				...colors
-			},
-			fontSize: {
-				...tokens.fontSize
-			},
 			fontFamily: {
 				sans: ['Finnomena Trek', 'aktiv-grotesk-thai', ...defaultTheme.fontFamily.sans]
 			},
