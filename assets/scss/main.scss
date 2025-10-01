@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body {
+	-webkit-overflow-scrolling: touch !important;
+	scroll-behavior: smooth !important;
+}
+
+.scroll-disabled::-webkit-scrollbar {
+	width: 4px;
+	height: 30px;
+	background-color: #c8c8c8;
+	margin-left: 1rem;
+	padding-left: 1rem;
+}
+
+.scroll-disabled::-webkit-scrollbar-thumb {
+	background: #7c7c7c;
+	border-radius: 16px;
+	padding: 1rem;
+}
+
+.btn-primary { @apply px-4 py-2 rounded-lg bg-gray-900 text-white hover:bg-black disabled:opacity-50 disabled:cursor-not-allowed; }

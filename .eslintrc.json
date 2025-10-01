@@ -1,0 +1,64 @@
+{
+	"env": {
+		"browser": true,
+		"es2021": true,
+		"node": true,
+    "vue/setup-compiler-macros": true,
+	},
+	"extends": [
+		"eslint:recommended",
+		"plugin:vue/essential",
+		"plugin:@typescript-eslint/recommended",
+		"@nuxtjs/eslint-config-typescript",
+		"plugin:vue/vue3-strongly-recommended",
+		"prettier",
+		"plugin:vue/vue3-recommended",
+		"plugin:prettier/recommended"
+	],
+	"parser": "vue-eslint-parser",
+	"parserOptions": {
+		"ecmaVersion": 2022,
+		"parser": "@typescript-eslint/parser",
+		"sourceType": "module"
+	},
+	"plugins": ["vue", "@typescript-eslint", "prettier"],
+	"rules": {
+		"prettier/prettier": [
+			"warn",
+			{
+				"semi": false,
+				"singleQuote": true,
+				"printWidth": 120,
+				"useTabs": true,
+				"tabWidth": 4,
+				"trailingComma": "none",
+				"endOfLine": "auto"
+			}
+		],
+		"vue/no-v-html": 0,
+		"max-lines": 0,
+		"no-unused-vars": 2,
+		"no-console": "off",
+		"semi": ["warn", "never"],
+		// "comma-dangle": ["never"],
+		"import/no-unresolved": "off",
+		"import/prefer-default-export": "off",
+		"no-shadow": ["warn", { "allow": ["state"] }],
+		"no-param-reassign": ["warn", { "props": false }],
+		"linebreak-style": 0,
+		"no-mixed-spaces-and-tabs": ["warn", "smart-tabs"],
+        "space-before-function-paren":"off",
+        "no-unused-expressions":"off",
+        "no-tabs":"off",
+        "vue/multi-word-component-names": "off",
+        "vue/valid-v-slot": ["error", {
+            "allowModifiers": true
+        }]
+    },
+    "globals": {
+      "defineProps": "readonly",
+      "defineEmits": "readonly",
+      "defineExpose": "readonly",
+      "withDefaults": "readonly"
+  }
+}

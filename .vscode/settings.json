@@ -1,0 +1,12 @@
+{
+	"[javascript]": {
+		"editor.formatOnSave": true
+	},
+	"[vue]": {
+		"editor.formatOnSave": true,
+	},
+	"scss.lint.unknownAtRules": "ignore",
+	"css.lint.unknownAtRules": "ignore",
+	"less.lint.unknownAtRules": "ignore",
+	"vetur.validation.style": false,
+}
