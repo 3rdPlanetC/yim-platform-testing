@@ -6,5 +6,5 @@ export function useAuth() {
 	const token = computed(() => userStore.token)
 	const loggedIn = computed(() => !!userStore.token)
 
-	return { user, token, loggedIn, login: userStore.login }
+	return { user, token, loggedIn, login: userStore.login, logout: userStore.logout }
 }

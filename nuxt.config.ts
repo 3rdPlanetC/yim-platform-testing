@@ -37,7 +37,7 @@ export default defineNuxtConfig({
 	},
 	app: {
 		head: {
-			title: 'Nuxt3 Shop',
+			title: 'Try to yim shop',
 			htmlAttrs: {
 				lang: 'th'
 			},
@@ -86,7 +86,7 @@ export default defineNuxtConfig({
 		// private
 		jwtSecret: process.env.JWT_SECRET || 'dev-secret',
 		public: {
-			siteName: 'Nuxt3 Shop',
+			siteName: 'Try to yim shop',
 			currency: 'THB'
 		}
 	},
